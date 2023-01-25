@@ -1,0 +1,61 @@
+.player {
+    background: #e7e9eb 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #0000001a;
+    color: black;
+    border: 1px solid #e7e9eb;
+    display: flex;
+    align-items: center !important;
+    justify-content: space-around;
+  }
+  
+  .playerDis {
+    background: #e7e9eb 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #0000001a;
+    box-shadow: 2px;
+    border: 1px solid #e7e9eb;
+    color: grey;
+    display: flex;
+    align-items: center !important;
+    justify-content: space-around;
+  }
+  .playBtn {
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 1rem;
+    outline: none;
+  }
+  .playBtnDis {
+    background-color: transparent;
+    color: grey;
+    border: none;
+    padding: 1rem;
+    outline: none;
+  }
+  
+  input[type="range"] {
+    height: 5px;
+  }
+  
+  .myProgress {
+    width: 75%;
+    background-color: #ddd;
+  }
+  
+  .myProgressDis {
+    width: 75%;
+    background-color: grey;
+  }
+  
+  .myBar {
+    width: 0%;
+    height: 3px;
+    background-color: black;
+    /* transition: width 0.5s ease; */
+  }
+  
+  .time {
+    font-size: small;
+    padding-right: 0.5rem;
+  }
+  

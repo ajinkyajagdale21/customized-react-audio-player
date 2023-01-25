@@ -1,0 +1,41 @@
+{
+  "name": "customizable-react-audio-player",
+  "version": "0.0.1",
+  "description": "customizable react audio player",
+  "main": "index.js",
+  "scripts": {
+    "build":"npx babel src --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajinkyajagdale21/customized-react-audio-player.git"
+  },
+  "keywords": [
+    "audio-player",
+    "react",
+    "custom-audio-player",
+    "customized"
+  ],
+  "author": "ajinkya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajinkyajagdale21/customized-react-audio-player/issues"
+  },
+  "homepage": "https://github.com/ajinkyajagdale21/customized-react-audio-player#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
