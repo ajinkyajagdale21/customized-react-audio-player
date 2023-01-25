@@ -17,3 +17,26 @@ npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
 2. you can select any color for icons . 
 3. you can change border radius accordingly .
 4. responsive and ready to use react audio player .
+
+# The Gist
+
+```
+  import React from 'react';
+  import ReactAudioPlayer from 'customizable-react-audio-player'
+  import 'customizable-react-audio-player/lib/ReactAudioPlayer.module.css';
+  
+  function App(){
+
+    return (
+      <div>
+            <AudioPlayer
+                audioSource="my_audio_file.ogg"
+                bgColor="green"
+                textColor="red"
+                border="rounded"
+            />
+      </div>
+    );
+  }
+
+```

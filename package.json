@@ -4,7 +4,7 @@
   "description": "customizable react audio player",
   "main": "dist/index.js",
   "scripts": {
-    "build":"npx babel src --out-dir dist"
+    "build":"npx babel src --out-dir lib"
   },
   "repository": {
     "type": "git",
