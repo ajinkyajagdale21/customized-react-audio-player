@@ -29,7 +29,7 @@ npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
 
     return (
       <div>
-            <AudioPlayer
+            <ReactAudioPlayer
                 audioSource="my_audio_file.ogg"
                 bgColor="green"
                 textColor="red"
