@@ -2,7 +2,7 @@
   "name": "customizable-react-audio-player",
   "version": "0.0.1",
   "description": "customizable react audio player",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build":"npx babel src --out-dir dist"
   },
