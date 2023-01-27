@@ -3,7 +3,7 @@ customizable-react-audio-player allows you to change styles and colors to your a
 # Installation
 
 ```
-npm install --save customizable-react-audio-player 
+npm install customizable-react-audio-player 
 ```
 # Note
 please install material icons if you haven't installed already!
@@ -23,7 +23,7 @@ npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
 ```
   import React from 'react';
   import ReactAudioPlayer from 'customizable-react-audio-player'
-  import 'customizable-react-audio-player/lib/ReactAudioPlayer.module.css';
+  import 'customizable-react-audio-player/dist/ReactAudioPlayer.module.css';
   
   function App(){
 

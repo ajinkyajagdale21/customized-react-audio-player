@@ -11,6 +11,7 @@ var _Pause = _interopRequireDefault(require("@mui/icons-material/Pause"));
 var _VolumeUp = _interopRequireDefault(require("@mui/icons-material/VolumeUp"));
 var _VolumeOff = _interopRequireDefault(require("@mui/icons-material/VolumeOff"));
 var _ReactAudioPlayerModule = _interopRequireDefault(require("./ReactAudioPlayer.module.css"));
+var _jsxRuntime = require("react/jsx-runtime");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -149,64 +150,81 @@ var ReactAudioPlayer = function ReactAudioPlayer(_ref) {
       once: true
     });
   };
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-    className: audioPresent ? _ReactAudioPlayerModule["default"].player : _ReactAudioPlayerModule["default"].playerDis,
-    style: border === "rounded" ? {
-      backgroundColor: bgColor,
-      color: textColor,
-      borderRadius: "1.5rem"
-    } : {
-      backgroundColor: bgColor,
-      color: textColor
-    }
-  }, /*#__PURE__*/React.createElement("audio", {
-    id: "audioSrc",
-    ref: audioRef,
-    src: audioSource,
-    autoPlay: autoPlay,
-    onLoadedMetadata: timeUpdateHadler,
-    onTimeUpdate: timeUpdateHadler
-  }), /*#__PURE__*/React.createElement("div", null, isPlaying ? /*#__PURE__*/React.createElement("button", {
-    className: audioPresent ? _ReactAudioPlayerModule["default"].playBtn : _ReactAudioPlayerModule["default"].playBtnDis,
-    onClick: playSongHandler,
-    disabled: audioPresent ? false : true,
-    style: {
-      color: textColor
-    }
-  }, /*#__PURE__*/React.createElement(_Pause["default"], null)) : /*#__PURE__*/React.createElement("button", {
-    className: audioPresent ? _ReactAudioPlayerModule["default"].playBtn : _ReactAudioPlayerModule["default"].playBtnDis,
-    onClick: playSongHandler,
-    disabled: audioPresent ? false : true,
-    style: {
-      color: textColor
-    }
-  }, /*#__PURE__*/React.createElement(_PlayArrow["default"], null))), /*#__PURE__*/React.createElement("div", {
-    className: "d-flex me-3 ".concat(_ReactAudioPlayerModule["default"].time)
-  }, /*#__PURE__*/React.createElement("span", null, formatAudioTime(audioTime.current)), /*#__PURE__*/React.createElement("span", null, "\xA0/\xA0"), /*#__PURE__*/React.createElement("span", null, formatAudioTime(audioTime.duration))), /*#__PURE__*/React.createElement("div", {
-    className: audioPresent ? _ReactAudioPlayerModule["default"].myProgress : _ReactAudioPlayerModule["default"].myProgressDis,
-    id: "myProgress",
-    onMouseDown: handler
-  }, /*#__PURE__*/React.createElement("div", {
-    className: _ReactAudioPlayerModule["default"].myBar,
-    id: "myBar",
-    style: {
-      backgroundColor: textColor
-    }
-  })), isMuted ? /*#__PURE__*/React.createElement("button", {
-    onClick: unMuteHandler,
-    className: audioPresent ? _ReactAudioPlayerModule["default"].playBtn : _ReactAudioPlayerModule["default"].playBtnDis,
-    disabled: audioPresent ? false : true,
-    style: {
-      color: textColor
-    }
-  }, /*#__PURE__*/React.createElement(_VolumeOff["default"], null)) : /*#__PURE__*/React.createElement("button", {
-    onClick: muteHandler,
-    className: audioPresent ? _ReactAudioPlayerModule["default"].playBtn : _ReactAudioPlayerModule["default"].playBtnDis,
-    disabled: audioPresent ? false : true,
-    style: {
-      color: textColor
-    }
-  }, /*#__PURE__*/React.createElement(_VolumeUp["default"], null))));
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+      className: audioPresent ? _ReactAudioPlayerModule["default"].player : _ReactAudioPlayerModule["default"].playerDis,
+      style: border === "rounded" ? {
+        backgroundColor: bgColor,
+        color: textColor,
+        borderRadius: "1.5rem"
+      } : {
+        backgroundColor: bgColor,
+        color: textColor
+      },
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("audio", {
+        id: "audioSrc",
+        ref: audioRef,
+        src: audioSource,
+        autoPlay: autoPlay,
+        onLoadedMetadata: timeUpdateHadler,
+        onTimeUpdate: timeUpdateHadler
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+        children: isPlaying ? /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+          className: audioPresent ? _ReactAudioPlayerModule["default"].playBtn : _ReactAudioPlayerModule["default"].playBtnDis,
+          onClick: playSongHandler,
+          disabled: audioPresent ? false : true,
+          style: {
+            color: textColor
+          },
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_Pause["default"], {})
+        }) : /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+          className: audioPresent ? _ReactAudioPlayerModule["default"].playBtn : _ReactAudioPlayerModule["default"].playBtnDis,
+          onClick: playSongHandler,
+          disabled: audioPresent ? false : true,
+          style: {
+            color: textColor
+          },
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_PlayArrow["default"], {})
+        })
+      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+        className: "d-flex me-3 ".concat(_ReactAudioPlayerModule["default"].time),
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+          children: formatAudioTime(audioTime.current)
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+          children: "\xA0/\xA0"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+          children: formatAudioTime(audioTime.duration)
+        })]
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+        className: audioPresent ? _ReactAudioPlayerModule["default"].myProgress : _ReactAudioPlayerModule["default"].myProgressDis,
+        id: "myProgress",
+        onMouseDown: handler,
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+          className: _ReactAudioPlayerModule["default"].myBar,
+          id: "myBar",
+          style: {
+            backgroundColor: textColor
+          }
+        })
+      }), isMuted ? /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+        onClick: unMuteHandler,
+        className: audioPresent ? _ReactAudioPlayerModule["default"].playBtn : _ReactAudioPlayerModule["default"].playBtnDis,
+        disabled: audioPresent ? false : true,
+        style: {
+          color: textColor
+        },
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_VolumeOff["default"], {})
+      }) : /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+        onClick: muteHandler,
+        className: audioPresent ? _ReactAudioPlayerModule["default"].playBtn : _ReactAudioPlayerModule["default"].playBtnDis,
+        disabled: audioPresent ? false : true,
+        style: {
+          color: textColor
+        },
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_VolumeUp["default"], {})
+      })]
+    })
+  });
 };
 var _default = ReactAudioPlayer;
 exports["default"] = _default;
