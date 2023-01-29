@@ -23,16 +23,15 @@ npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
 ```
   import React from 'react';
   import ReactAudioPlayer from 'customizable-react-audio-player'
-  import 'customizable-react-audio-player/dist/ReactAudioPlayer.module.css';
-  
+
   function App(){
 
     return (
       <div>
             <ReactAudioPlayer
                 audioSource="my_audio_file.ogg"
-                bgColor="green"
-                textColor="red"
+                bgColor="#1F2943"
+                textColor="white"
                 border="rounded"
             />
       </div>
