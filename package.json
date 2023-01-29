@@ -1,6 +1,6 @@
 {
   "name": "customizable-react-audio-player",
-  "version": "1.0.1",
+  "version": "0.0.2",
   "description": "customizable react audio player",
   "main": "dist/index.js",
   "scripts": {
